@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>The Loop</title>
   </head>
   <body class="page-body">
@@ -43,8 +43,8 @@
 
         <section class="user-actions">
           <ul class="delivery-info">
-            <li>Оплата</li>
-            <li>Доставка</li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка</a></li>
           </ul>
           <div class="site-cart">
             <a class="user-cart" href="#">
@@ -70,234 +70,262 @@
               <h3 class="visually-hidden">Кроссовки Nike</h3>
               <span class="old-price">9 900 &#8381;</span>
               <span class="new-price">1 900 &#8381;</span>
-              <img src="img/slider-item-1.png" alt="Кроссовки Nike">
+              <img src="img/slider-item-1.png" width="556" height="377" alt="Кроссовки Nike">
             </li>
             <li class="slider-item">
               <h3 class="visually-hidden">Кроссовки Nike</h3>
               <span class="old-price">9 900 &#8381;</span>
               <span class="new-price">2 900 &#8381;</span>
-              <img src="img/slider-item-1.png" alt="Кроссовки Nike">
+              <img src="img/slider-item-1.png" width="556" height="377" alt="Кроссовки Nike">
             </li>
             <li class="slider-item">
               <h3 class="visually-hidden">Кроссовки Nike</h3>
               <span class="old-price">9 900 &#8381;</span>
               <span class="new-price">3 900 &#8381;</span>
-              <img src="img/slider-item-1.png" alt="Кроссовки Nike">
+              <img src="img/slider-item-1.png" width="556" height="377" alt="Кроссовки Nike">
             </li>
             <li class="slider-item">
               <h3 class="visually-hidden">Кроссовки Nike</h3>
               <span class="old-price">9 900 &#8381;</span>
               <span class="new-price">4 900 &#8381;</span>
-              <img src="img/slider-item-1.png" alt="Кроссовки Nike">
+              <img src="img/slider-item-1.png" width="556" height="377" alt="Кроссовки Nike">
             </li>
           </ul>
           <ul class="slider-controls">
             <li>
-              <button type="button">Первый элемент</button>
+              <button class="control" type="button" aria-label="Первый элемент"></button>
             </li>
             <li>
-              <button type="button">Первый элемент</button>
+              <button class="control current-control" type="button" aria-label="Второй элемент"></button>
             </li>
             <li>
-              <button type="button">Первый элемент</button>
+              <button class="control" type="button" aria-label="Третий элемент"></button>
             </li>
             <li>
-              <button type="button">Первый элемент</button>
+              <button class="control" type="button" aria-label="Четвёртый элемент"></button>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="bonus-gift">
-        <p><span class="free-shipping">Бесплатная доставка</span> от 3000 Р</p>
-        <p>Сделайте заказ и получите подарок!</p>
+        <div class="container">
+          <p class="bonus-main-info"><b>Бесплатная доставка</b> от 3000&#8381;</p>
+          <p class="bonus-description">Сделайте заказ и получите подарок!</p>
+        </div>
       </section>
 
       <section class="site-catalog">
         <h2 class="visually-hidden">Каталог магазина</h2>
         <ul class="catalog-collections">
           <li class="male-collection">
-            <h3><b>Мужская</b> коллекция</h3>
-            <p>Обувь, пуловеры, костюмы</p>
-            <a class="button-show" href="#">
-              <span class="visually-hidden">Открыть каталог</span>
-            </a>
+            <div class="catalog-column-left">
+              <h3><b>Мужская</b> коллекция</h3>
+              <p>Обувь, полуверы, костюмы</p>
+              <a class="button button-show" href="#">
+                <span class="visually-hidden">Открыть каталог</span>
+              </a>
+              <img src="img/male-catalog.jpg" width="190" height="171" alt="Изображение мужчины">
+            </div>
           </li>
           <li class="female-collection">
-            <h3><b>Женская</b> коллекция</h3>
-            <p>Обувь, пуловеры, костюмы</p>
-            <a class="button-show" href="#">
-              <span class="visually-hidden">Открыть каталог</span>
-            </a>
+            <div class="catalog-column-right">
+              <h3><b>Женская</b> коллекция</h3>
+              <p>Обувь, полуверы, костюмы</p>
+              <a class="button button-show" href="#">
+                <span class="visually-hidden">Открыть каталог</span>
+              </a>
+              <img src="img/female-catalog.jpg" width="190" height="171" alt="Изображение женщины">
+            </div>
           </li>
         </ul>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h3>Платье</h3>
-            <img src="img/catalog-item-1.png" alt="Футболка">
-          </li>
-          <li class="catalog-item">
-            <h3>Платье</h3>
-            <img src="img/catalog-item-1.png" alt="Футболка">
-          </li>
-          <li class="catalog-item">
-            <h3>Платье</h3>
-            <img src="img/catalog-item-1.png" alt="Футболка">
-          </li>
-          <li class="catalog-item">
-            <h3>Платье</h3>
-            <img src="img/catalog-item-1.png" alt="Футболка">
-          </li>
-          <li class="catalog-item">
-            <h3>Платье</h3>
-            <img src="img/catalog-item-1.png" alt="Футболка">
-          </li>
-          <li class="catalog-item">
-            <h3>Платье</h3>
-            <img src="img/catalog-item-1.png" alt="Футболка">
-          </li>
-          <li class="catalog-item">
-            <h3>Платье</h3>
-            <img src="img/catalog-item-1.png" alt="Футболка">
-          </li>
-          <li class="catalog-item">
-            <h3>Платье</h3>
-            <img src="img/catalog-item-1.png" alt="Футболка">
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="catalog-list">
+            <li class="catalog-item male-item">
+              <h3>Платья</h3>
+              <img src="img/male-item-1.jpg" width="278" height="236" alt="Футболка">
+            </li>
+            <li class="catalog-item female-item">
+              <h3>Платья</h3>
+              <img src="img/female-item-1.jpg" width="277" height="236" alt="Футболка">
+            </li>
+            <li class="catalog-item male-item">
+              <h3>Платья</h3>
+              <img src="img/male-item-1.jpg" width="278" height="236" alt="Футболка">
+            </li>
+            <li class="catalog-item female-item">
+              <h3>Платья</h3>
+              <img src="img/female-item-1.jpg" width="277" height="236" alt="Футболка">
+            </li>
+            <li class="catalog-item female-item">
+              <h3>Платья</h3>
+              <img src="img/female-item-1.jpg" width="277" height="236" alt="Футболка">
+            </li>
+            <li class="catalog-item male-item">
+              <h3>Платья</h3>
+              <img src="img/male-item-1.jpg" width="278" height="236" alt="Футболка">
+            </li>
+            <li class="catalog-item female-item">
+              <h3>Платья</h3>
+              <img src="img/female-item-1.jpg" width="277" height="236" alt="Футболка">
+            </li>
+            <li class="catalog-item male-item">
+              <h3>Платья</h3>
+              <img src="img/male-item-1.jpg" width="278" height="236" alt="Футболка">
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="catalog-new">
+      <section class="catalog-new container">
         <h2>Новые модели</h2>
         <ul class="catalog-new-list">
           <li class="catalog-new-item">
-            <img src="img/new-item.jpg" alt="Коктейльное платье">
+            <img src="img/new-item.jpg" width="205" height="211" alt="Коктейльное платье">
             <h3>Коктейльное платье</h3>
-            <span class="price">P 40 000</span>
+            <span class="price">&#8381; 40 000</span>
           </li>
           <li class="catalog-new-item">
-            <img src="img/new-item.jpg" alt="Коктейльное платье">
+            <img src="img/new-item.jpg" width="205" height="211" alt="Коктейльное платье">
             <h3>Коктейльное платье</h3>
-            <span class="price">P 40 000</span>
+            <span class="price">&#8381; 40 000</span>
           </li>
           <li class="catalog-new-item">
-            <img src="img/new-item.jpg" alt="Коктейльное платье">
+            <img src="img/new-item.jpg" width="205" height="211" alt="Коктейльное платье">
             <h3>Коктейльное платье</h3>
-            <span class="price">P 40 000</span>
+            <span class="price">&#8381; 40 000</span>
           </li>
           <li class="catalog-new-item">
-            <img src="img/new-item.jpg" alt="Коктейльное платье">
+            <img src="img/new-item.jpg" width="205" height="211" alt="Коктейльное платье">
             <h3>Коктейльное платье</h3>
-            <span class="price">P 40 000</span>
+            <span class="price">&#8381; 40 000</span>
           </li>
         </ul>
-        <a class="button-all" href="#">Все модели</a>
+        <a class="button button-all" href="#">Все модели</a>
       </section>
 
       <section class="site-subscribe">
-        <h2 class="visually-hidden">Оформление подписки</h2>
-        <p>Получайте скидки и подарки</p>
-        <form class="subscribe-form" action="" method="post">
-          <label class="visually-hidden" for="user-email">Email</label>
-          <input class="user-email" id="user-email" type="text" name="email" value="">
-          <button class="button-subscribe" type="submit">Подписаться</button>
-        </form>
+        <div class="subscribe-wrapper container">
+          <h2 class="visually-hidden">Оформление подписки</h2>
+          <p>Получайте скидки и подарки</p>
+          <form class="subscribe-form" action="" method="post">
+            <label class="visually-hidden" for="user-email">Email</label>
+            <input class="user-email" id="user-email" type="text" name="email" value="" placeholder="Ваш e-mail">
+            <button class="button button-subscribe" type="submit">Подписаться</button>
+          </form>
+        </div>
       </section>
 
-      <section class="site-sales">
+      <section class="site-sales container">
         <h2>Скидки до 90%</h2>
         <ul class="catalog-new-list">
           <li class="catalog-new-item">
-            <img src="img/new-item.jpg" alt="Коктейльное платье">
+            <img src="img/new-item.jpg" width="205" height="211" alt="Коктейльное платье">
             <h3>Коктейльное платье</h3>
-            <span class="price">P 40 000</span>
+            <span class="price">&#8381; 40 000</span>
           </li>
           <li class="catalog-new-item">
-            <img src="img/new-item.jpg" alt="Коктейльное платье">
+            <img src="img/new-item.jpg" width="205" height="211" alt="Коктейльное платье">
             <h3>Коктейльное платье</h3>
-            <span class="price">P 40 000</span>
+            <span class="price">&#8381; 40 000</span>
           </li>
           <li class="catalog-new-item">
-            <img src="img/new-item.jpg" alt="Коктейльное платье">
+            <img src="img/new-item.jpg" width="205" height="211" alt="Коктейльное платье">
             <h3>Коктейльное платье</h3>
-            <span class="price">P 40 000</span>
+            <span class="price">&#8381; 40 000</span>
           </li>
           <li class="catalog-new-item">
-            <img src="img/new-item.jpg" alt="Коктейльное платье">
+            <img src="img/new-item.jpg" width="205" height="211" alt="Коктейльное платье">
             <h3>Коктейльное платье</h3>
-            <span class="price">P 40 000</span>
+            <span class="price">&#8381; 40 000</span>
           </li>
         </ul>
-        <a class="button-all" href="#">Все модели</a>
+        <a class="button button-all" href="#">Все модели</a>
       </section>
     </main>
 
     <footer class="main-footer">
-      <a class="logo logo-footer" href="#">The Loot</a>
-      <p class="shop-slogan">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.
-      </p>
-      <h2 class="visually-hidden">Навигация</h2>
-      <nav class="site-navigation">
-        <h3>Основные ссылки</h3>
-        <ul>
-          <li>
-            <a href="#">О компании</a>
-          </li>
-          <li>
-            <a href="#">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Оплата</a>
-          </li>
-        </ul>
-        <h3>Категории</h3>
-        <ul>
-          <li>
-            <a href="#">Мужская одежда</a>
-          </li>
-          <li>
-            <a href="#">Женская одежда</a>
-          </li>
-          <li>
-            <a href="#">Детская одежда</a>
-          </li>
-          <li>
-            <a href="#">Для животных</a>
-          </li>
-        </ul>
-        <h3>Полезные ссылки</h3>
-        <ul>
-          <li>
-            <a href="#">Таблица размеров</a>
-          </li>
-          <li>
-            <a href="#">Блог о моде</a>
-          </li>
-          <li>
-            <a href="#">Наша миссия</a>
-          </li>
-        </ul>
-      </nav>
-      <h3>Соц сети</h3>
-      <ul class="social-list">
-        <li>
-          <a href="#">VK.com</a>
-        </li>
-        <li>
-          <a href="#">Facebook</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
+      <div class="footer-wrapper container">
+        <section class="site-description">
+          <a class="logo logo-footer" href="#">The Loop</a>
+          <p class="shop-slogan">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.
+          </p>
+        </section>
+
+        <h2 class="visually-hidden">Навигация</h2>
+        <nav class="site-navigation">
+          <div class="nav-column">
+            <h3>Основные ссылки</h3>
+            <ul class="nav-main-links">
+              <li>
+                <a href="#">О компании</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Оплата</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-column">
+            <h3>Категории</h3>
+            <ul class="nav-categories">
+              <li>
+                <a href="#">Мужская одежда</a>
+              </li>
+              <li>
+                <a href="#">Женская одежда</a>
+              </li>
+              <li>
+                <a href="#">Детская одежда</a>
+              </li>
+              <li>
+                <a href="#">Для животных</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-column">
+          <h3>Полезные ссылки</h3>
+          <ul class="usefull-links">
+            <li>
+              <a href="#">Таблица размеров</a>
+            </li>
+            <li>
+              <a href="#">Блог о моде</a>
+            </li>
+            <li>
+              <a href="#">Наша миссия</a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+
+        <section class="site-socials">
+          <h3>Соц сети</h3>
+          <ul class="social-list">
+            <li>
+              <a class="vk-link" href="#">VK.com</a>
+            </li>
+            <li>
+              <a class="fb-link" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="insta-link" href="#">Instagram</a>
+            </li>
+          </ul>
+        </section>
+      </div>
 
       <section class="site-copyright">
-        <p class="site-copyright">Copyright &copy; 2019. Все права защищены</p>
-        <p class="site-privacy">Политика приватности</p>
+        <div class="copyright-wrapper container">
+          <p class="site-copyright-label">Copyright &copy; 2019. Все права защищены</p>
+          <p class="site-privacy">Политика приватности</p>
+        </div>
       </section>
     </footer>
   </body>
